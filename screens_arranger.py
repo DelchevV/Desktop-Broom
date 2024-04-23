@@ -2,6 +2,7 @@ import os
 import shutil
 from datetime import datetime
 
+
 def move_screenshots():
     # redirect us to desktop folder
     desktop_path = os.path.expanduser("~/Desktop")
@@ -16,7 +17,6 @@ def move_screenshots():
     current_folder = os.path.join(images_folder, date)
     if not os.path.exists(current_folder):
         os.makedirs(current_folder)
-
 
     # Get all the files on Desktop
     files_on_desktop = os.listdir(desktop_path)
